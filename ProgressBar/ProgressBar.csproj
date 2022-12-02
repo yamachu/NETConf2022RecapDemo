@@ -11,4 +11,11 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.0" PrivateAssets="all" />
   </ItemGroup>
 
+  <Target Name="NotifyWatchBuildCommand" Condition="'$(Configuration)' == 'Debug'" AfterTargets="Build">
+    <Message Importance="high" Text="tailwind css is not built, run: npm run watch/css" />
+  </Target>
+  <Target Name="BuildCssProd" Condition="'$(Configuration)' == 'Release'" BeforeTargets="Build">
+    <Exec Command="npm run build/css" />
+  </Target>
+
 </Project>
