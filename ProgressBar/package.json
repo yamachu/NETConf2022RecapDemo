@@ -1,0 +1,17 @@
+{
+  "name": "progressbar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build/css": "tailwindcss -i wwwroot/css/tailwind.css -o wwwroot/css/tailwind.min.css --minify",
+    "watch/css": "tailwindcss -i wwwroot/css/tailwind.css -o wwwroot/css/tailwind.min.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "3.2.4"
+  }
+}
