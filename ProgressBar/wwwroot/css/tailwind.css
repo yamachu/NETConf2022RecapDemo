@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-loading-progress {
+    width: var(--blazor-load-percentage, 0%);
+}
+
+.my-loading-progress-text:after {
+    content: var(--blazor-load-percentage-text, "");
+}
