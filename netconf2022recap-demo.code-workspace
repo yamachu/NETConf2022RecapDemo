@@ -5,6 +5,10 @@
 		},
 		{
 			"path": "ProgressBar"
+		},
+		{
+			"path": "CustomElements/BlazorCustomElements",
+			"name": "BlazorCustomElements"
 		}
 	],
 	"settings": {}
