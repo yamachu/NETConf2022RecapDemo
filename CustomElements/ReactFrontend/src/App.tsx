@@ -34,7 +34,10 @@ export const App: React.FC = () => {
           <blazor-counter
             title={counter.title}
             increment-amount={counter.incrementAmount}
-          ></blazor-counter>
+          >
+            {/* This slot is not worked on .NET 7 */}
+            <div slot="description">Welcome .NET Conf 2022 Recap Tokyo!</div>
+          </blazor-counter>
         </div>
       ))}
     </div>

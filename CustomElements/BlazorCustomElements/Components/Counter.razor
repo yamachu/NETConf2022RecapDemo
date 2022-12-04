@@ -5,7 +5,10 @@
 
 <button @onclick="IncrementCount">Click me</button>
 
-<span><slot name="description">See: https://github.com/aspnet/AspLabs/blob/main/src/BlazorCustomElements</slot></span>
+<span>
+    @* This slot is not worked on .NET 7 *@
+    <slot name="description">See: https://github.com/aspnet/AspLabs/blob/main/src/BlazorCustomElements</slot>
+</span>
 
 @code {
     private int currentCount = 0;
