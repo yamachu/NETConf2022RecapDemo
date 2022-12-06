@@ -6,7 +6,7 @@ declare global {
       // CustomElementsの型定義を行ってる
       ["blazor-counter"]: DOMAttributes<HTMLElement> & {
         title?: string;
-        incrementalAmount?: number;
+        ["increment-amount"]?: number;
       };
     }
   }
